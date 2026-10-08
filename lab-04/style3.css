@@ -1,0 +1,37 @@
+    a {
+    color:#77236a
+    }    
+
+    .header_link{
+       color: #30781e;        
+       }
+
+    .list_square {
+        list-style-type: square;
+    }
+
+    .list_checkmark {
+        list-style-type: "✓ ";
+    }
+
+    ul li ul {
+        list-style-type: none;
+    }
+
+    ul li ul.list_square {
+        list-style-type: square;
+    }
+
+    ul li ul.list_checkmark {
+        list-style-type: "✓ ";
+    }
+
+    .berries_list a {
+        text-decoration: none;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+    
+

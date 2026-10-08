@@ -1,0 +1,47 @@
+      * {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        p {
+            color: green;
+            text-align: centre;
+        }
+
+        div {
+            text-align:justify
+        }
+
+        .color-red {
+          color: red;
+        }
+
+        .no-wrap {
+            white-space: nowrap;
+        }
+
+        #special-paragraph {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .text-shadow {
+           text-shadow: 5px -5px  3px rgb(149, 149, 175);
+        }
+
+        .parag1 {
+            text-decoration: line-through;
+            text-transform: uppercase;
+            text-indent: 50px;
+        }
+
+        .parag2 {
+            letter-spacing: 30px;
+            word-spacing: 50px;
+        }
+        
+        .centre {
+            text-align: center;
+        }
+        
