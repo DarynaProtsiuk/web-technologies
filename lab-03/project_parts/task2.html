@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Mondrian</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 600px;
+        }
+        td {
+            border: 8px solid black;
+        }
+
+        .yellow {
+             background-color: #fffa69; }
+        .blue   {
+             background-color: #074481; }
+        .red    {
+             background-color: #ff5b2d; }
+        .black  {
+             background-color: #000000; }
+        .white  {
+             background-color: #ffffff; }
+
+    
+        .no-top    {
+             border-top: none; }
+        .no-bottom {
+             border-bottom: none; }
+        .no-left   {
+             border-left: none; }
+        .no-right  {
+             border-right: none; }
+    </style>
+</head>
+<body>
+    <h1>Mondrian</h1>
+    <p><a href="../index.html">Повернутись на головну</a></p>
+    <table>
+        <colgroup>
+            <col style="width: 65px">
+            <col style="width: 80px">
+            <col style="width: 90px">
+            <col style="width: 160px">
+            <col style="width: 105px">
+            <col style="width: 100px">
+        </colgroup>
+
+        <tr style="height: 60px">
+            <td class="white no-top no-left" colspan="2"></td>
+            <td class="white no-top" colspan="2"></td>
+            <td class="yellow no-top no-right" colspan="2"></td>
+        </tr>
+        <tr style="height: 170px">
+            <td class="white no-left"></td>
+            <td class="red" colspan="3" rowspan="2"></td>
+            <td class="yellow no-right" colspan="2"></td>
+        </tr>
+        <tr style="height: 165px">
+            <td class="white no-left" rowspan="2"></td>
+            <td class="white"></td>
+            <td class="white no-right"></td>
+        </tr>
+        <tr style="height: 90px">
+            <td class="black" colspan="2" rowspan="2"></td>
+            <td class="white"></td>
+            <td class="white no-right" colspan="2"></td>
+        </tr>
+        <tr style="height: 80px">
+            <td class="yellow no-left no-bottom" rowspan="3"></td>
+            <td class="white"></td>
+            <td class="blue no-right" colspan="2" rowspan="2"></td>
+        </tr>
+        <tr style="height: 40px">
+            <td class="white no-bottom" colspan="2" rowspan="2"></td>
+            <td class="black"></td>
+        </tr>
+        <tr style="height: 45px">
+            <td class="white no-bottom no-right" colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>

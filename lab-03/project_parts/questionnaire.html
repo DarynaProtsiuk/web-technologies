@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
+<body>
+    <h1>Анкета</h1>
+    <p><a href="../index.html">Повернутись на головну</a></p>
+
+    <form method="get">
+
+        <fieldset>
+            <legend>Особисті дані</legend>
+            <p>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Введіть ім'я" required tabindex="1">
+            </p>
+            <p>
+                <label for="birth">Дата народження:</label>
+                <input type="date" id="birth" name="birth" tabindex="2">
+            </p>
+            <p>
+                <label for="about">Про себе:</label><br>
+                <textarea id="about" name="about" rows="4" cols="40" placeholder="Розкажіть про себе" tabindex="3"></textarea>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Контакти та пароль</legend>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com"
+                       required autocomplete="off"
+                       pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                       title="Введіть email у форматі name@example.com" tabindex="4">
+            </p>
+            <p>
+                <label for="tel">Телефон:</label>
+                <input type="tel" id="tel" name="tel" placeholder="+380501234567"
+                       pattern="\+380[0-9]{9}"
+                       title="Формат: +380 і ще 9 цифр" tabindex="5">
+            </p>
+            <p>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Мінімум 6 символів"
+                       required
+                       pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                       title="Мінімум 6 символів: хоча б одна велика літера, одна мала і одна цифра" tabindex="6">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Спосіб зв'язку</legend>
+            <input type="radio" id="contact-email" name="contact" value="email" tabindex="7">
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact" value="phone" tabindex="8">
+            <label for="contact-phone">Телефон</label>
+            <input type="radio" id="contact-chat" name="contact" value="messenger" tabindex="9">
+            <label for="contact-chat">Месенджер</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Рівень знань HTML</legend>
+            <input type="radio" id="level-low" name="level" value="low" tabindex="10">
+            <label for="level-low">Початковий</label>
+            <input type="radio" id="level-mid" name="level" value="middle" checked tabindex="11">
+            <label for="level-mid">Середній</label>
+            <input type="radio" id="level-high" name="level" value="high" tabindex="12">
+            <label for="level-high">Високий</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Інтереси</legend>
+            <input type="checkbox" id="sport" name="interest" value="sport" tabindex="13">
+            <label for="sport">Спорт</label>
+            <input type="checkbox" id="music" name="interest" value="music" tabindex="14">
+            <label for="music">Музика</label>
+            <input type="checkbox" id="travel" name="interest" value="travel" tabindex="15">
+            <label for="travel">Подорожі</label>
+            <input type="checkbox" id="movies" name="interest" value="movies" tabindex="16">
+            <label for="movies">Кіно</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Списки</legend>
+            <p>
+                <label for="city">Місто:</label>
+                <select id="city" name="city" tabindex="17">
+                    <option value="chernivtsi" selected>Чернівці</option>
+                    <option value="kyiv">Київ</option>
+                    <option value="lviv">Львів</option>
+                    <option value="odesa">Одеса</option>
+                    <option value="kharkiv">Харків</option>
+                    <option value="dnipro">Дніпро</option>
+                </select>
+            </p>
+            <p>
+                <label for="languages">Мови (можна кілька):</label><br>
+                <select id="languages" name="languages" multiple size="6" tabindex="18">
+                    <option value="ukrainian">Українська</option>
+                    <option value="english">Англійська</option>
+                    <option value="german">Німецька</option>
+                    <option value="french">Французька</option>
+                    <option value="polish">Польська</option>
+                    <option value="spanish">Іспанська</option>
+                </select>
+            </p>
+            <p>
+                <label for="food">Улюблена їжа:</label>
+                <select id="food" name="food" tabindex="19">
+                    <optgroup label="Фрукти">
+                        <option value="apple">Яблуко</option>
+                        <option value="pear">Груша</option>
+                        <option value="plum">Слива</option>
+                    </optgroup>
+                    <optgroup label="Овочі">
+                        <option value="carrot">Морква</option>
+                        <option value="cabbage">Капуста</option>
+                        <option value="cucumber">Огірок</option>
+                    </optgroup>
+                    <optgroup label="Ягоди">
+                        <option value="strawberry">Полуниця</option>
+                        <option value="raspberry">Малина</option>
+                        <option value="cherry">Вишня</option>
+                    </optgroup>
+                    <optgroup label="Горіхи">
+                        <option value="walnut">Волоський</option>
+                        <option value="almond">Мигдаль</option>
+                        <option value="hazelnut">Фундук</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="lang">Мова програмування:</label>
+                <input type="text" id="lang" name="lang" list="langs" placeholder="Почніть вводити" tabindex="20">
+                <datalist id="langs">
+                    <option value="Python">
+                    <option value="Java">
+                    <option value="JavaScript">
+                    <option value="C++">
+                    <option value="HTML">
+                </datalist>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Файли</legend>
+            <p>
+                <label for="audio">Аудіофайли:</label>
+                <input type="file" id="audio" name="audio" accept="audio/*" multiple tabindex="21">
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit" name="action" value="send" tabindex="22">Надіслати</button>
+            <button type="reset" name="action" value="clear" tabindex="23">Очистити</button>
+        </p>
+    </form>
+
+    <hr>
+
+    <h2>Відправка методом POST</h2>
+    <form method="post" enctype="multipart/form-data">
+        <p>
+            <label for="name2">Ім'я:</label>
+            <input type="text" id="name2" name="name" placeholder="Введіть ім'я" tabindex="24">
+        </p>
+        <p>
+            <label for="audio2">Аудіофайли:</label>
+            <input type="file" id="audio2" name="audio" accept="audio/*" multiple tabindex="25">
+        </p>
+        <button type="submit" name="action" value="send" tabindex="26">Надіслати</button>
+    </form>
+</body>
+</html>

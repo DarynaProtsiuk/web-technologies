@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+        }
+        .teal {
+            background-color: rgb(90, 226, 203);
+        }
+        .cream {
+            background-color:  rgb(254, 254, 201);
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: rgb(49, 161, 79);
+        }
+        .blue {
+            background-color: rgb(39, 54, 223);
+        }
+        .yellow {
+            background-color: rgb(238, 242, 10);
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <p><a href="../index.html">Повернутись на головну</a></p>
+    <table>
+        <tr>
+            <td class="teal" colspan="8"></td>
+        </tr>
+        <tr>
+            <td class="cream" rowspan="6"></td>
+            <td class="teal" colspan="6"></td>
+            <td class="cream" rowspan="6"></td>
+        </tr>
+        <tr>
+            <td class="cream" rowspan="4"></td>
+            <td class="teal" colspan="4"></td>
+            <td class="cream" rowspan="4"></td>
+        </tr>
+        <tr>
+            <td class="cream" rowspan="2"></td>
+            <td class="red"></td>
+            <td class="blue"></td>
+            <td class="cream" rowspan="2"></td>
+        </tr>
+        <tr>
+        <td class="green"></td>
+        <td class="yellow"></td>
+        </tr>
+        <tr>
+            <td class="teal" colspan="4"></td>
+        </tr>
+         <tr>
+            <td class="teal" colspan="6"></td>
+        </tr>
+         <tr>
+            <td class="teal" colspan="8"></td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
