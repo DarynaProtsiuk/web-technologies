@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  margin: 40px auto;
+}
+
+.block {
+  box-sizing: border-box;
+  width: 250px;
+  height: 300px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 16px;
+}
+
+.block-1 {
+  background-color: #4daa57;
+  color: #111;
+}
+
+.block-2 {
+  background-color: #5b87d1;
+  color: white;
+  order: 2;
+}
+
+.block-3 {
+  background-color: #5e4b7a;
+  color: white;
+  order: 1;
+}
+
+.block-2,
+.block-3 {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.block-1:hover + .block-2,
+.block-2:hover {
+  opacity: 1;
+}
+
+.block-2:hover + .block-3,
+.block-3:hover {
+  opacity: 1;
+}
