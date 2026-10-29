@@ -1,0 +1,79 @@
+div {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif; /* не з умов, можна прибрати */
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px 40px;
+}
+
+.checklist {
+    background-color: rgb(103, 158, 128);
+    padding: 0 20px 0 50px;
+    background-position: left top;
+    background-size: 50px 50px;
+}
+
+ul ul {
+    font-size: 18px;
+    font-style: italic;
+}
+
+ul ul li {
+    background-color: rgb(153, 180, 102);
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+span {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.checklist > span {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+ul ul li span {
+    background-color: rgb(218, 106, 32);
+}
+
+.checklist   {
+     background-image: url("rule.svg"); }     
+li.route     {
+     background-image: url("ad_units.svg"); }       
+li.tickets   {
+     background-image: url("airplane_ticket.svg"); }  
+li.hotel     { 
+    background-image: url("hotel.svg"); }            
+li.car       {
+     background-image: url("car_rental.svg"); }       
+li.bars      {
+     background-image: url("local_bar.svg"); }        
+li.casino    {
+     background-image: url("casino.svg"); }          
+li.museums   {
+     background-image: url("museum.svg"); }           
+li.festivals {
+     background-image: url("festival.svg"); }        
